@@ -93,11 +93,11 @@ disqusShortname = "yourdiscussshortname"  ## 是否开启disqus评论，不要�
   #   name = "首页"
   #   url = "/home/"
   #   weight = 2
-  # [[menu.main]]
-  #   identifier = "home"
-  #   name = "首页"
-  #   url = "/home/"
-  #   weight = 1
+  [[menu.main]]
+    identifier = "photo"
+    name = "摄影"
+    url = "/photo/"
+    weight = 2
 
   [[menu.main]]
     identifier = "archives"
