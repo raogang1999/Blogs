@@ -1,8 +1,12 @@
-baseURL = "https://www.flysnow.org"
-languageCode = "zh-CN"
+baseURL = "http://www.iprivacy.org"
+
+languageCode = "zh-hans"
+defaultContentLanguage = "zh-hans"  
+
+# languageCode = "zh-CN"
 title = "Gang的博客"
 theme = "maupassant"
-googleAnalytics = ""  # UA-XXXXXXXX-X/G-XXXXXXXXXX
+googleAnalytics = "G-N928ZMKE05"  # UA-XXXXXXXX-X/G-XXXXXXXXXX
 
 ## 保持分类的原始名字（false会做转小写处理）
 preserveTaxonomyNames = true
@@ -11,8 +15,10 @@ disablePathToLower = true
 
 hasCJKLanguage = true
 summaryLength = 40
-
+autoCollapseToc = true    # Auto expand and collapse toc     
 # disqusShortname = "yourdiscussshortname"  ## 是否开启disqus评论，不要和utteranc同时开启
+
+
 
 [author]
   name = "Gang"
@@ -24,7 +30,8 @@ summaryLength = 40
   description = "关注于隐私保护领域。"
   busuanzi = true #启用不算子网页统计
   googleAd = ""  #ca-pub-xxxxxxxxxxxxxx
-  localSearch = true # 启用本地搜索
+  localSearch = true # 启用本地搜索[params]
+  fancybox = true # 图片放大
 
   # 这里我存放在了主题的static文件夹里，根目录的似乎也可以
   # customCSS = ['douban.css', 'other.css']
@@ -40,7 +47,7 @@ summaryLength = 40
 [[params.links]]
   title = "Gang的博客"
   name = "Gang的博客"
-  url = "https://www.iprivacy.top/"
+  url = "http://www.iprivacy.top/"
 
 
 
@@ -92,12 +99,12 @@ summaryLength = 40
   #   identifier = "home"
   #   name = "首页"
   #   url = "/home/"
-  #   weight = 2
-  # [[menu.main]]
-  #   identifier = "photo"
-  #   name = "摄影"
-  #   url = "/photo/"
-  #   weight = 2
+  #   weight = 1
+  [[menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 2
 
   [[menu.main]]
     identifier = "archives"
