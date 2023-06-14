@@ -32,6 +32,7 @@ autoCollapseToc = true    # Auto expand and collapse toc
   googleAd = ""  #ca-pub-xxxxxxxxxxxxxx
   localSearch = true # 启用本地搜索[params]
   fancybox = true # 图片放大
+  beian = "蜀ICP备2022017946号-1"
 
   # 这里我存放在了主题的static文件夹里，根目录的似乎也可以
   # customCSS = ['douban.css', 'other.css']
