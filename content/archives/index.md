@@ -1,5 +1,6 @@
 ---
 title: "归档"
-description: "归档页面"
-type: "archives"
+layout: "archives"
+url: "/archives/"
+summary: "archives"
 ---

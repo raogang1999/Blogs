@@ -1,93 +1,117 @@
 baseURL = "https://raogang.lumio.top/"
 
-languageCode = "zh-hans"
+locale = "zh-Hans"
 defaultContentLanguage = "zh-hans"  
 
-# languageCode = "zh-CN"
 title = "Gang的博客"
-theme = "maupassant"
-googleAnalytics = "G-N928ZMKE05"  # UA-XXXXXXXX-X/G-XXXXXXXXXX
+theme = "PaperMod"
 
-## 保持分类的原始名字（false会做转小写处理）
-preserveTaxonomyNames = true
 ## 是否禁止URL Path转小写
 disablePathToLower = true
 
 hasCJKLanguage = true
-summaryLength = 40
-autoCollapseToc = true    # Auto expand and collapse toc     
-# disqusShortname = "yourdiscussshortname"  ## 是否开启disqus评论，不要和utteranc同时开启
+paginate = 10
+enableRobotsTXT = true
 
-
-
-[author]
-  name = "Gang"
+## Google Analytics 配置
+[services]
+  [services.googleAnalytics]
+    id = "G-N928ZMKE05"
 
 [params]
+  env = "production"
   author = "Gang"
-  subtitle = "研究方向为联邦学习的隐私保护，技术方向为区块链、同态加密、差分隐私。"
-  keywords = "Go,Python,Pytorch,IBS,ABS,密码学,深度学习,区块链"
-  description = "关注于隐私保护领域。"
-  busuanzi = true #启用不算子网页统计
-  googleAd = ""  #ca-pub-xxxxxxxxxxxxxx
-  localSearch = true # 启用本地搜索[params]
-  fancybox = true # 图片放大
-  beian = "蜀ICP备2022017946号-1"
+  description = "研究方向为联邦学习的隐私保护，技术方向为区块链、同态加密、差分隐私。"
+  keywords = ["Go","Python","Pytorch","密码学","深度学习","区块链","联邦学习","隐私保护"]
+  defaultTheme = "auto"  # dark, light, auto
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  showtoc = true
+  tocopen = false
+  comments = true
 
-  # 这里我存放在了主题的static文件夹里，根目录的似乎也可以
-  # customCSS = ['douban.css', 'other.css']
-  # if ['custom.css'], load '/static/css/custom.css' file
-  # customJS = ['douban.js']
-  # if ['custom.js'], load '/static/js/custom.js' file
+  [params.homeInfoParams]
+    Title = "Gang的博客"
+    Content = "研究方向为联邦学习的隐私保护，技术方向为区块链、同态加密、差分隐私。"
 
-  # 全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能
-  toc = true  # 是否开启目录
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/raogang1999/"
 
-## 友情链接，可以多个
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
 
-[[params.links]]
-  title = "Gang的博客"
-  name = "Gang的博客"
-  url = "http://www.iprivacy.top/"
-
-
-
-## 侧边栏广告位
-# [[params.ads]]
-#   title = "【2019双12】ALL IN CLoud 低至1折"
-#   url = "https://www.aliyun.com/minisite/goods?userCode=jdg9oj97&share_source=copy_link"
-#   img = "https://img.alicdn.com/tfs/TB1_rYHo7P2gK0jSZPxXXacQpXa-690-388.jpg"
-# [[params.ads]]
-#   title = "助力产业智慧升级，云服务器首年88元起，更有千元代金券礼包免费领！"
-#   url = "https://cloud.tencent.com/act/cps/redirect?redirect=1048&cps_key=14ff722692ac784fa8c3301c8c28d924&from=console"
-#   img = "https://upload-dianshi-1255598498.file.myqcloud.com/345-7c71532bd4935fbdd9a67c1a71e577b1767b805c.200%E7%89%88%E6%9C%ACB.jpg"
-# [[params.ads]]
-#   title = "【渠道专享低折扣】11月特惠 限时2折"
-#   url = "https://www.aliyun.com/acts/limit-buy?userCode=jdg9oj97"
-#   img = "https://img.alicdn.com/tfs/TB1hblJl7Y2gK0jSZFgXXc5OFXa-750-400.jpg"
-
-## 配置 utteranc评论,教程参考 https://utteranc.es/
-# [params.utteranc]
-#   enable = false
-#   repo = "your github repo" ##换成自己得
-#   issueTerm = "pathname"
-#   theme = "github-light"
-## 配置 waline 评论系统,教程参考 https://waline.js.org/
+## 配置 waline 评论系统
 [params.waline]
   enable = true
   placeholder = "说点什么吧..."
-  serverURL = "https://comments.iprivacy.top/" #换成你的serverURL
-## 开启版权声明，协议名字和链接都可以换
+  serverURL = "https://comments.raogang.lumio.top/"
+
+## 开启版权声明
 [params.cc]
-    name = "知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议"
-    link = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  name = "知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议"
+  link = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 
 ## 配置代码高亮
 [markup]
   [markup.highlight]
-    codeFences= true
-    lineNumbersInTable=true
-    tabWidth=4
+    codeFences = true
+    noClasses = false
+    lineNumbersInTable = true
+    tabWidth = 4
+
+## 导航菜单
+[[menu.main]]
+  identifier = "posts"
+  name = "文章"
+  url = "/post/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "categories"
+  name = "分类"
+  url = "/categories/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "tags"
+  name = "标签"
+  url = "/tags/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "archives"
+  name = "归档"
+  url = "/archives/"
+  weight = 40
+
+[[menu.main]]
+  identifier = "search"
+  name = "搜索"
+  url = "/search/"
+  weight = 50
+
+[[menu.main]]
+  identifier = "about"
+  name = "关于"
+  url = "/about/"
+  weight = 60
+
+## PaperMod 搜索功能
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
     lineNoStart=1
     lineNos = false
     noClasses=true
