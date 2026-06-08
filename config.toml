@@ -66,6 +66,9 @@ enableRobotsTXT = true
 
 ## 配置代码高亮
 [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # 允许渲染原始 HTML
   [markup.highlight]
     codeFences = true
     noClasses = false
