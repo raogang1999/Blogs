@@ -20,7 +20,7 @@ enableRobotsTXT = true
 
 [params]
   env = "production"
-  author = "Gang"
+  author = "Evan"
   description = "研究方向为联邦学习的隐私保护，技术方向为区块链、同态加密、差分隐私。"
   keywords = ["Go","Python","Pytorch","密码学","深度学习","区块链","联邦学习","隐私保护"]
   defaultTheme = "auto"  # dark, light, auto
